@@ -25,4 +25,4 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       # - run: nix-build
 
-      - run: nix-hash --to-base16 --type sha256 $(nix-prefetch-url https://github.com/microsoft/onnxruntime/releases/download/v1.16.1/onnxruntime-win-x64-1.16.1.zip)
+      - run: nix-hash --to-base16 --type sha256 $(nix-prefetch-url https://github.com/microsoft/onnxruntime/releases/download/v1.17.0/onnxruntime-win-x64-1.17.0.zip)
