@@ -23,6 +23,7 @@ jobs:
       - uses: cachix/install-nix-action@v25
         with:
           nix_path: nixpkgs=channel:nixos-unstable
+          quiet: true
       # - run: nix-build
 
-      - run: nix-hash --to-base16 --type sha256 $(nix-prefetch-url https://github.com/microsoft/onnxruntime/releases/download/v1.17.0/onnxruntime-linux-x64-1.17.0.tgz)
+      - run: nix-hash --to-base16 --type sha256 $(nix-prefetch-url https://github.com/microsoft/onnxruntime/releases/download/v1.17.0/onnxruntime-linux-aarch64-1.17.0.tgz)
