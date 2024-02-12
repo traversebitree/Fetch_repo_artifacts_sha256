@@ -25,4 +25,4 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       # - run: nix-build
 
-      - run: nix hash to-sri --type sha256 $(nix-prefetch-url --unpack https://github.com/jonringer/nix-template/archive/v0.4.1.tar.gz)
+      - run: nix hash to-sri --type sha256 $(nix-prefetch-url --unpack https://github.com/microsoft/onnxruntime/releases/download/v1.16.1/onnxruntime-win-x64-1.16.1.zip)
